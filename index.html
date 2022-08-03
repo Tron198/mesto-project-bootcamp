@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="icon" href="./images/logo/icon1.png" type="image/png">
+    <title>Mesto</title>
+    <meta name="description"
+        content="Страница с карточками описывающими то или иное место поанеты с возможностью оставлять коментарии и оценки контента.Данная страница показывает возможности HTML,CSS а так же JS. " />
+    <meta name="keywords" content="HTML5, CSS, Figma, Mesto, JS," />
+    <meta name="author" content="Semendyaev Aleksandr" />
+
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="header">
+            <img class="header__logo" src="./images/logo/logo.svg" alt="логотип">
+        </header>
+
+        <section class="profile">
+            <img class="profile__avatar" src="./images/avatar.jpg" alt="аватар заполнившего карточку">
+            <div class="profile__data">
+                <h1 class="profile__name">Семендяев Александр Павлович</h1>
+                <p class="profile__occupation">Исследователь океанов</p>
+                <button class="profile__edit-button" type="button">редактировать</button>
+            </div>
+            <button class="profile__add-button" type="button">добавить</button>
+        </section>
+
+
+        <section class="cards">
+            <ul class="elements">
+
+                <li class="element">
+                    <img class="element__photo" src="./images/isaakievskiy-sobor.jpg">
+                    <div class="element__set">
+                        <h2 class="element__title">Исакиевский собор</h2>
+                        <button class="element__like">нравится</button>
+                    </div>
+                </li>
+
+                <li class="element">
+                    <img class="element__photo" src="./images/дворцовый мост.jpg">
+                    <div class="element__set">
+                        <h2 class="element__title">Дворцовый мост</h2>
+                        <button class="element__like">нравится</button>
+                    </div>
+                </li>
+
+                <li class="element">
+                    <img class="element__photo" src="./images/petropavlovskaya-krepost.jpg">
+                    <div class="element__set">
+                        <h2 class="element__title">Петропавловская крепость</h2>
+                        <button class="element__like">нравится</button>
+                    </div>
+                </li>
+
+                <li class="element">
+                    <img class="element__photo" src="./images/petergof.jpg">
+                    <div class="element__set">
+                        <h2 class="element__title">Петергоф</h2>
+                        <button class="element__like">нравится</button>
+                    </div>
+                </li>
+
+                <li class="element">
+                    <img class="element__photo" src="./images/hram-spasa-na-krovi.jpg">
+                    <div class="element__set">
+                        <h2 class="element__title">Спас На Крови</h2>
+                        <button class="element__like">нравится</button>
+                    </div>
+                </li>
+
+
+                <li class="element">
+                    <img class="element__photo" src="./images/dvortsovaya-ploschad.jpg">
+                    <div class="element__set">
+                        <h2 class="element__title">Дворцовая площадь</h2>
+                        <button class="element__like">нравится</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">&copy;2022 Mesto Russia</p>
+        </footer>
+        <div class="popup__bg">
+            <form class="popup">
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <img src="./images/logo/Close Icon.svg" class="popup__close">
+                <label class="popup__form">
+                    <input class="popup__field-name" type="text" name="name">
+                    <input class="popup__field-occupation" type="text" name="info">
+                </label>
+                <button class="popup__submit-button" type="submit">Сохранить</button>
+            </form>
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>
