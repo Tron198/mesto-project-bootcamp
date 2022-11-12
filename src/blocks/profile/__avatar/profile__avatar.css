@@ -1,0 +1,13 @@
+
+.profile__avatar {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  grid-area: avatar;
+  margin: auto;
+  z-index: 0;
+  cursor: pointer;
+}

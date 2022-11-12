@@ -1,0 +1,25 @@
+.cards__like-button {
+  grid-area: like-button;
+  border: none;
+  cursor: pointer;
+  background-image: url(../../../images/element__like-button-disable.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.4s opacity;
+  background-color: transparent;
+  margin: auto auto 2px;
+  width: 22px;
+  height: 19px;
+}
+
+.cards__like-button:hover {
+  opacity: 0.5;
+}
+
+.cards__like-button_active {
+  opacity: 1;
+  background-image: url(../../../images/element__like-button-activ.svg);
+}
+
+
+

@@ -1,0 +1,11 @@
+.cards__element {
+    position: relative;
+  list-style-type: none;
+  width: 282px;
+  height: 361px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 0;
+}

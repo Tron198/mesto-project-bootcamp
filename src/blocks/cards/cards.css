@@ -1,0 +1,27 @@
+.cards {
+  max-width: 282px;
+  display: grid;
+  margin: 0 auto;
+  padding: 0;
+  grid-template-columns: repeat(auto-fill, 282px);
+  gap: 20px;
+  justify-content: center;
+}
+
+@media screen and (min-width:600px) {
+  .cards  {
+    max-width: 581px;
+      gap: 20px 20px;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .cards  {
+    max-width: 880px;
+    grid-template-columns: repeat(3, 282px);
+  }
+}
+
+
+
+/*попробовать переделать грид контейнер на более оптимальный*/

@@ -1,0 +1,14 @@
+.popup__input-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 1);
+  cursor: text;
+  width: 100%;
+}
+
+.popup__input-item:focus{
+  outline: none;
+}

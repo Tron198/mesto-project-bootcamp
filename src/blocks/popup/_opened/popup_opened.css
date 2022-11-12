@@ -1,0 +1,5 @@
+.popup_opened {
+    z-index: 99;
+    visibility: visible;
+    opacity: 1;
+}

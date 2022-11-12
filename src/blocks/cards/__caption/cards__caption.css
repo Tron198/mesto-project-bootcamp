@@ -1,0 +1,14 @@
+.cards__caption {
+  display: grid;
+  grid-template-areas:
+  "pic-name like-button"
+  "pic-name like-count";
+  grid-template-columns: 224px 22px;
+  max-width: 246px;
+  margin: 0 auto;
+  padding-top: 5px;
+  }
+
+
+
+ 
