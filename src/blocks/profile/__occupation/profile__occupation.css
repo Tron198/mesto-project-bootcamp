@@ -1,25 +1,22 @@
-.profile__occupation{
+.profile__occupation {
   grid-area: occupation;
-    max-width: 189px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    margin: 0;
-    color: white;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    
-  }
-  
-  /* 1024px 1280px */
-  @media screen and (min-width: 1024px) {
-    .profile__occupation {
-      max-width: 336px;
-      text-align: left;
-      font-size: 18px;
-      line-height: 22px;
-    }
+  max-width: 189px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
+@media screen and (min-width: 1025px) {
+  .profile__occupation {
+    max-width: 336px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
   }
+}

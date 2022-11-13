@@ -8,17 +8,17 @@
   padding-bottom: 36px;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
   .footer {
-      grid-template-columns: 282px 282px;
-      gap: 17px 20px;
+    grid-template-columns: 282px 282px;
+    gap: 17px 20px;
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width: 1025px) {
   .footer {
-      grid-template-columns: repeat(3, 282px);
-      padding-top: 67px;
-      padding-bottom: 60px;
+    grid-template-columns: repeat(3, 282px);
+    padding-top: 67px;
+    padding-bottom: 60px;
   }
 }

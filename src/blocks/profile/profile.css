@@ -1,5 +1,3 @@
-
-/* 320px 768px */
 .profile {
   display: grid;
   align-items: center;
@@ -7,16 +5,14 @@
   margin: 36px auto 36px;
   padding: 0;
   grid-template-areas:
-  "avatar"
-  "data"
-  "add-button";
+    "avatar"
+    "data"
+    "add-button";
 }
 
-/* 1024px 1280px */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .profile {
-    grid-template-areas:
-    "avatar data add-button";
+    grid-template-areas: "avatar data add-button";
     grid-template-columns: 120px 336px auto;
     margin: 36px auto 47px;
     gap: 30px;

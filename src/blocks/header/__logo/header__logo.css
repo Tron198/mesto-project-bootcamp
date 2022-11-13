@@ -4,9 +4,9 @@
   margin-bottom: 32px;
 }
 
-@media screen and (min-width:1025px) {
-  .header__logo{
-      width: 142px;
-      margin-left: 0;
+@media screen and (min-width: 1025px) {
+  .header__logo {
+    width: 142px;
+    margin-left: 0;
   }
 }

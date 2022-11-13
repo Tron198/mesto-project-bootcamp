@@ -1,11 +1,9 @@
-
- /* 320px 768px */
 .profile__data {
   display: grid;
   grid-area: data;
-  grid-template-areas: 
-  "name edit-button"
-  "occupation occupation";
+  grid-template-areas:
+    "name edit-button"
+    "occupation occupation";
   gap: 10px 14px;
   max-width: 282px;
   margin: 0 auto;
@@ -13,8 +11,7 @@
   align-items: baseline;
 }
 
-/* 1024px 1280px */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .profile__data {
     max-width: 336px;
     gap: 16px 18px;

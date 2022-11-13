@@ -8,20 +8,16 @@
   justify-content: center;
 }
 
-@media screen and (min-width:600px) {
-  .cards  {
+@media screen and (min-width: 600px) {
+  .cards {
     max-width: 581px;
-      gap: 20px 20px;
+    gap: 20px 20px;
   }
 }
 
-@media screen and (min-width:1025px) {
-  .cards  {
+@media screen and (min-width: 1025px) {
+  .cards {
     max-width: 880px;
     grid-template-columns: repeat(3, 282px);
   }
 }
-
-
-
-/*попробовать переделать грид контейнер на более оптимальный*/

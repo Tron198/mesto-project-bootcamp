@@ -1,10 +1,10 @@
-.popup__image-name{
+.popup__image-name {
   color: white;
   margin: 10px 0 0 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  max-width: 291px;;
+  max-width: 291px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

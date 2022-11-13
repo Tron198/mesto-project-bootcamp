@@ -10,10 +10,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .profile__name {
     width: 294px;
     text-align: left;
@@ -21,7 +20,3 @@
     line-height: 48px;
   }
 }
-
-
-
-

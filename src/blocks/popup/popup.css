@@ -1,10 +1,10 @@
 .popup {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -12,10 +12,5 @@
   display: flex;
   visibility: hidden;
   opacity: 0;
-  transition: visibility .4s, opacity .4s ease-out;
+  transition: visibility 0.4s, opacity 0.4s ease-out;
 }
-
-
-
-
-

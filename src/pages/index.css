@@ -13,10 +13,7 @@
 /*MAIN*/
 @import url(../blocks/main/main.css);
 
-
-
-
-/*POPUP редактировать*/
+/*POPUP*/
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/__container/popup__container.css);
@@ -35,9 +32,7 @@
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/_view-image/popup_view-image.css);
 
-
-
-/*profile редактировать*/
+/*PROFILE*/
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
@@ -46,9 +41,7 @@
 @import url(../blocks/profile/__name/profile__name.css);
 @import url(../blocks/profile/__occupation/profile__occupation.css);
 
-
 /*CARDS*/
-
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__caption/cards__caption.css);
 @import url(../blocks/cards/__delete-button/cards__delete-button.css);

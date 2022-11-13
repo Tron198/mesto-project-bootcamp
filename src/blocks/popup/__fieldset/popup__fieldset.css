@@ -1,13 +1,13 @@
 .popup__fieldset {
-    border: none;
-    margin: 75px 0 45px 0;
-    padding: 0;
-    display: grid;
-    gap: 30px;
+  border: none;
+  margin: 75px 0 45px 0;
+  padding: 0;
+  display: grid;
+  gap: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .popup__fieldset {
+    margin: 54px 0 48px 0;
   }
-  
-  @media screen and (min-width: 600px) {
-    .popup__fieldset {
-        margin: 54px 0 48px 0;
-    }
-  }
+}

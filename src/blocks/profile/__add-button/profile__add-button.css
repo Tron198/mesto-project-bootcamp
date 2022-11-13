@@ -7,36 +7,21 @@
   margin: 0 auto;
   justify-content: center;
   transition: opacity 0.3s ease-in-out;
-  background:  #000000 url(../../../images/plus-button.svg) center no-repeat;
+  background: #000000 url(../../../images/plus-button.svg) center no-repeat;
   background-size: 16px 16px;
   cursor: pointer;
   background-color: transparent;
-  
 }
 
 .profile__add-button:hover {
-  opacity: .6;
-  transition: opacity .5s ease-in;
-
+  opacity: 0.6;
+  transition: opacity 0.5s ease-in;
 }
 
-@media screen and (min-width:1024px) {
-  .profile__add-button{
-      
-      background-size: 22px 22px;
-      width: 150px;
-      margin-right: 0;
-  }  
+@media screen and (min-width: 1025px) {
+  .profile__add-button {
+    background-size: 22px 22px;
+    width: 150px;
+    margin-right: 0;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
