@@ -1,9 +1,5 @@
-//функции для работы с карточками 
 import { openPopup } from './utils';
-
-export const popupImg = document.querySelector('#popup-image');
-export const tapeTemplate = document.querySelector('#cards').content;
-     
+import { popupImg, tapeTemplate} from './constans';
 
 export function createCard(name, src) {
     const tapeElement = tapeTemplate.querySelector('.cards__element')

@@ -29,4 +29,4 @@
 ****
 **Ссылка на проект:**
 
-https://
+https://github.com/Tron198/mesto-project-bootcamp.git

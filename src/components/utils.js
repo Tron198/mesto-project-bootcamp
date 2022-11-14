@@ -1,6 +1,3 @@
-//утилитарные функции, которые используются в работе сразу нескольких других функций
-
-
 export function openPopup(popup) {
     document.addEventListener('keydown', handleEscPressed)
     popup.classList.add('popup_opened');

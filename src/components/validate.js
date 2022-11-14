@@ -28,11 +28,9 @@ export const checkInputValidity = (inputElement, selectors) => {
 
 export function hasInvalidInput(inputList) {
   return inputList.some((inputElement) => {
-    return !inputElement.validity.valid;
+  return !inputElement.validity.valid;
   });
 }
-
-
 
 export function revalidationForm(formElement, selectors) {
   const inputList = Array.from(formElement.querySelectorAll(selectors.inputSelector));
@@ -40,16 +38,16 @@ export function revalidationForm(formElement, selectors) {
   inputList.forEach((inputElement) => {
     hideInputError(inputElement, selectors);
   });
-  inactiveSubmitButton(buttonElement, selectors);
+  disableSubmitButtot(buttonElement, selectors);
 }
 
 
 
-export function inactiveSubmitButton(buttonElement, { inactiveButtonClass }) {
+export function disableSubmitButtot(buttonElement, { inactiveButtonClass }) {
   buttonElement.classList.add(inactiveButtonClass);
   buttonElement.disabled = true;
 }
-export function activeSubmitButton(buttonElement, { inactiveButtonClass }) {
+export function enableSubmitButton(buttonElement, { inactiveButtonClass }) {
   buttonElement.classList.remove(inactiveButtonClass);
   buttonElement.disabled = false;
 }
@@ -58,9 +56,9 @@ export function activeSubmitButton(buttonElement, { inactiveButtonClass }) {
 
 export function toggleButtonState(inputList, buttonElement, selectors) {
   if (hasInvalidInput(inputList)) {
-    inactiveSubmitButton(buttonElement, selectors);
+    disableSubmitButtot(buttonElement, selectors);
   } else {
-    activeSubmitButton(buttonElement, selectors);
+    enableSubmitButton(buttonElement, selectors);
   }
 }
 

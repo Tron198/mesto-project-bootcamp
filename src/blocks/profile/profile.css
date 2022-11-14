@@ -1,13 +1,13 @@
 .profile {
   display: grid;
+  grid-template-areas:
+  "avatar"
+  "data"
+  "add-button";
   align-items: center;
   max-width: 880px;
   margin: 36px auto 36px;
   padding: 0;
-  grid-template-areas:
-    "avatar"
-    "data"
-    "add-button";
 }
 
 @media screen and (min-width: 1025px) {

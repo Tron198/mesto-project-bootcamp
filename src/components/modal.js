@@ -2,17 +2,9 @@
 import {closePopup, closePopupOverlay} from './utils';
 import { createCard } from './card';
 import { container, profileName, profileJob } from '../index';
+import { popupAbout, popupAdd, nameInput, professionInput, name, src } from './constans';
 
-export const popupAbout = document.querySelector('#popup-edit');
-export const popupAdd = document.querySelector('#popup-add');
-       const nameInput = popupAbout.querySelector('#name').value;
-       const professionInput = popupAbout.querySelector('#profession').value;
-       const name = popupAdd.querySelector('#title').value;
-       const src = popupAdd.querySelector('#picture').value;
-       const newCard = createCard(name, src)
-       
-
-
+export const newCard = createCard(name, src)
 
 export function submitFormProfile(e) {
     e.preventDefault();

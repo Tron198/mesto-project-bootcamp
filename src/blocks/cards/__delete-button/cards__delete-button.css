@@ -10,7 +10,7 @@
   width: 18px;
   height: 19px;
   padding: 0;
-  transition: 0.5s opacity;
+  transition: opacity .5s ease-in;
   cursor: pointer;
 }
 

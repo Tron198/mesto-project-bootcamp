@@ -3,19 +3,16 @@ import './pages/index.css';
 
 import { mestoSelectors, initialCards } from './components/data';
 import {revalidationForm,enableValidation } from './components/validate';
-import { popupImg, createCard } from './components/card';
-
-import {
-    popupAbout, popupAdd,
-    submitFormProfile, submitFormPlace,
-    initPopup
-} from './components/modal';
+import {createCard } from './components/card';
+import { popupImg, popupAbout, popupAdd } from './components/constans';
+import { submitFormProfile, submitFormPlace, initPopup } from './components/modal';
 
 import { openPopup } from './components/utils';
 
 export const container = document.querySelector('.cards');
 export const profileName = document.querySelector('.profile__name');
 export const profileJob = document.querySelector('.profile__occupation');
+
        const openEditButton = document.querySelector('.profile__edit-button');
        const buttonAdd = document.querySelector('.profile__add-button');
        const formEdit = document.querySelector('#profile-edit');
@@ -46,9 +43,6 @@ buttonAdd.addEventListener('click', function () {
 
 formEdit.addEventListener('submit', submitFormProfile);
 formAdd.addEventListener('submit', submitFormPlace);
-
-
-
 
 
 container.addEventListener('click', function (e) {
