@@ -5,6 +5,9 @@
     "pic-name like-count";
   grid-template-columns: 224px 22px;
   max-width: 246px;
-  margin: 0 auto;
-  padding-top: 5px;
+  padding: 0;
+ margin-top: 25px;
+ margin-bottom: 31px;
+ margin-left: 21px;
+ margin-right: 15px;
 }

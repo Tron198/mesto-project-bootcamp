@@ -2,19 +2,21 @@
 import {closePopup, closePopupOverlay} from './utils';
 import { createCard } from './card';
 import { container, profileName, profileJob } from '../index';
-import { popupAbout, popupAdd, nameInput, professionInput, name, src } from './constans';
+import { popupAbout, popupAdd, nameInput, professionInput, } from './constans';
 
-export const newCard = createCard(name, src)
 
 export function submitFormProfile(e) {
     e.preventDefault();
-    profileName.innerHTML = nameInput;
-    profileJob.innerHTML = professionInput;
+    profileName.textContent = nameInput.value;
+    profileJob.textContent = professionInput.value;
     closePopup(popupAbout);
 };
 
 export function submitFormPlace(e) {
     e.preventDefault()
+    const src = popupAdd.querySelector('#picture').value;
+    const name = popupAdd.querySelector('#title').value;
+    const newCard = createCard(name, src)
     container.insertAdjacentElement('afterbegin', newCard)
     closePopup(popupAdd)
 };

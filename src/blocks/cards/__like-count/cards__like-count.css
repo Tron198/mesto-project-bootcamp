@@ -1,4 +1,4 @@
-.card__like-count {
+.cards__like-count {
   grid-area: like-count;
   margin: 2px auto auto;
 }

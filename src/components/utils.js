@@ -17,8 +17,7 @@ export const handleEscPressed = (evt) => {
 }
 
 export function closePopupOverlay(evt) {
-    if (evt.target === evt.currentTarget) {
-        const popup = document.querySelector('.popup_opened');
-        closePopup(popup)
-    }
+    if (evt.target === evt.currentTarget) 
+        closePopup(evt.target)
+    
 }

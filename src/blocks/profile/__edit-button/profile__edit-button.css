@@ -9,7 +9,7 @@
   grid-column-start: 2;
   grid-row-start: 1;
   align-self: center;
-  background: #000000 url(../../../images/Edit-Button2.svg) center no-repeat;
+  background: #000000 url(../../../images/pen.svg) center no-repeat;
   background-size: 7.5px 7.5px;
   background-color: transparent;
   cursor: pointer;

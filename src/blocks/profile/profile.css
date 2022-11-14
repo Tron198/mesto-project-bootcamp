@@ -14,7 +14,7 @@
   .profile {
     grid-template-areas: "avatar data add-button";
     grid-template-columns: 120px 336px auto;
-    margin: 36px auto 47px;
+    margin: 40px auto 51px;
     gap: 30px;
   }
 }
