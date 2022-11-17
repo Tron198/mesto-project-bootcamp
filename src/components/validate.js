@@ -25,7 +25,6 @@ export const checkInputValidity = (inputElement, selectors) => {
 };
 
 
-
 export function hasInvalidInput(inputList) {
   return inputList.some((inputElement) => {
   return !inputElement.validity.valid;
@@ -40,7 +39,6 @@ export function revalidationForm(formElement, selectors) {
   });
   disableSubmitButtot(buttonElement, selectors);
 }
-
 
 
 export function disableSubmitButtot(buttonElement, { inactiveButtonClass }) {

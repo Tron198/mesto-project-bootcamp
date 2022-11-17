@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" containerpopup__container="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/logo/icon1.png" type="image/png">
     <title>Mesto</title>
     <meta name="description"
-        content="Страница с карточками описывающими то или иное место поанеты с возможностью оставлять коментарии и оценки контента.Данная страница показывает возможности HTML,CSS а так же JS. " />
-    <meta name="keywords" content="HTML5, CSS, Figma, Mesto, JS,PerfectPixel,Nested,Проектная работа,Yandex Practicum" />
-    <meta name="author" content="Semendyaev Aleksandr" />
+        containerpopup__container="Страница с карточками описывающими то или иное место поанеты с возможностью оставлять коментарии и оценки контента.Данная страница показывает возможности HTML,CSS а так же JS. " />
+    <meta name="keywords" containerpopup__container="HTML5, CSS, Figma, Mesto, JS,PerfectPixel,Nested,Проектная работа,Yandex Practicum" />
+    <meta name="author" containerpopup__container="Semendyaev Aleksandr" />
 
 </head>
 
@@ -103,6 +103,36 @@
               <p class="popup__image-name" id="image-name">Название фото</p>
             </div>
         </div>
+
+        <div class="popup" id="popup-avatar">
+          <div class="popup__container">
+              <button class="popup__close" type="button"></button>
+              <form class="popup__form" id="avatar-form">
+                  <h2 class="popup__title">Обновить аватар</h2>
+                  <fieldset class="popup__form">
+                      </label>
+                      <label class="popup__label">
+                      <input required class="popup__input-item popup__input-avatar" type="url" id="avatar" type="text" placeholder="Ссылка на картинку">
+                      <span class="popup__input-error avatar-error" id="avatar-error"></span>
+                      </label>
+                  </fieldset>
+                  <button class="popup__save" type="submit" id="popup-save-avatar">Сохранить</button>
+              </form> 
+          </div>
+      </div>
+  
+      <div class="popup" id="popup-delete-card">
+          <div class="popup__container">
+              <button class="popup__close" type="button"></button>
+              <form class="popup__form" id="delete-form">
+                  <h2 class="popup__title">Вы уверены?</h2>
+                  <button class="popup__save" type="submit" id="popup-delete-button">Да</button>
+              </form> 
+          </div>
+      </div>
+
+
+
 
 
 </body>
