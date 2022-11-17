@@ -21,7 +21,7 @@
 
     <main class="main">
         <section class="profile">
-            <img class="profile__avatar" src='<%=require("./images/avatar.svg")%>' alt="аватар заполнившего карточку">
+            <div class="profile__avatar"></div>
             <div class="profile__data">
                  <h1 class="profile__name">Жак-Ив Кусто</h1>
                  <p class="profile__occupation">Исследователь океанов</p> 
@@ -109,7 +109,7 @@
               <button class="popup__close" type="button"></button>
               <form class="popup__form" id="avatar-form">
                   <h2 class="popup__title">Обновить аватар</h2>
-                  <fieldset class="popup__form">
+                  <fieldset class="popup__fieldset">
                       </label>
                       <label class="popup__label">
                       <input required class="popup__input-item popup__input-avatar" type="url" id="avatar" type="text" placeholder="Ссылка на картинку">
@@ -131,10 +131,5 @@
           </div>
       </div>
 
-
-
-
-
 </body>
-
 </html>

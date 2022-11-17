@@ -1,5 +1,3 @@
-//import { data } from "autoprefixer";
-
 const config = {
   baseUrl: 'https://nomoreparties.co/v1/wbf-cohort-2',
   headers: {
@@ -19,59 +17,59 @@ function checkResponse(res) {
   });
 }
 
-export function getBasicData() {
-  return fetch(`${config.baseUrl}/users/me`, {
+export async function getBasicData() {
+  const res = await fetch(`${config.baseUrl}/users/me`, {
     headers: config.headers,
-  })
-    .then(checkResponse);
+  });
+  return checkResponse(res);
 };
 
-export function changeProfileData(name, about) {
-  return fetch(`${config.baseUrl}/users/me`, {
+export async function changeProfileData(name, about) {
+  const res = await fetch(`${config.baseUrl}/users/me`, {
     method: 'PATCH',
     headers: config.headers,
     body: JSON.stringify({ name, about })
-  })
-    .then(checkResponse)
+  });
+  return checkResponse(res);
 }
 
-export function changeProfileAvatar(avatar) {
-  return fetch(`${config.baseUrl}/users/me/avatar`, {
+export async function changeProfileAvatar(avatar) {
+  const res = await fetch(`${config.baseUrl}/users/me/avatar`, {
     method: 'PATCH',
     headers: config.headers,
     body: JSON.stringify({ avatar })
-  })
-    .then(checkResponse)
+  });
+  return checkResponse(res);
 }
 
-export function getInitialCards() {
-  return fetch(`${config.baseUrl}/cards`, {
+export async function getInitialCards() {
+  const res = await fetch(`${config.baseUrl}/cards`, {
     headers: config.headers,
-  })
-    .then(checkResponse)
+  });
+  return checkResponse(res);
 }
 
-export function createCardTape(data) {
-  return fetch(`${config.baseUrl}/cards`, {
+export async function createCardTape(data) {
+  const res = await fetch(`${config.baseUrl}/cards`, {
     method: 'POST',
     headers: config.headers,
     body: JSON.stringify(data)
-  })
-    .then(checkResponse)
+  });
+  return checkResponse(res);
 }
 
-export const switchLike = (id, isLiked) => {
-  return fetch(`${config.baseUrl}/cards/likes/${id}`, {
-    method:  isLiked ? 'DELETE' : 'PUT',
+export const switchLike = async (id, isLiked) => {
+  const res = await fetch(`${config.baseUrl}/cards/likes/${id}`, {
+    method: isLiked ? 'DELETE' : 'PUT',
     headers: config.headers,
-  })
-    .then(checkResponse)
+  });
+  return checkResponse(res);
 }
 
-export const deleteCardOnServer = (id) => {
-  return fetch(`${config.baseUrl}/cards/${id}`, {
+export const deleteCardOnServer = async (id) => {
+  const res = await fetch(`${config.baseUrl}/cards/${id}`, {
     method: 'DELETE',
     headers: config.headers,
-  })
-  .then(checkResponse)
+  });
+  return checkResponse(res);
 }
