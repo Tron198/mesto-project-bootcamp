@@ -14,8 +14,7 @@ export const formDelete = document.querySelector('#delete-form');
 export const container = document.querySelector(".cards");
 export const profileName = document.querySelector(".profile__name");
 export const profileJob = document.querySelector(".profile__occupation");
-
-
+export const cardTemplate = document.querySelector("#cards").content;
 
 
 

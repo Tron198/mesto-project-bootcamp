@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" containerpopup__container="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/logo/icon1.png" type="image/png">
     <title>Mesto</title>
     <meta name="description"
         containerpopup__container="Страница с карточками описывающими то или иное место поанеты с возможностью оставлять коментарии и оценки контента.Данная страница показывает возможности HTML,CSS а так же JS. " />
@@ -16,12 +15,12 @@
 <body class="body">
     <div class="page">
         <header class="header">
-        <img class="header__logo" src='<%=require("./images/logo.svg")%>' alt="логотип">
+        <img class="header__logo" src='<%=require("./images/logo.svg")%>' alt="логотип сайта">
         </header>
 
     <main class="main">
         <section class="profile">
-            <div class="profile__avatar"></div>
+            <div class="profile__avatar" id="profile-avatar" alt="Автар профиля"></div>
             <div class="profile__data">
                  <h1 class="profile__name">Жак-Ив Кусто</h1>
                  <p class="profile__occupation">Исследователь океанов</p> 

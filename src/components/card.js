@@ -1,6 +1,6 @@
 import { openPopup, closePopup, checkIfLiked } from "./utils";
 import { popupCardDelete } from "./modal";
-import { popupImg } from "./constans";
+import { popupImg, cardTemplate } from "./constans";
 import { deleteCardOnServer, switchLike } from "./api";
 
 export const popupImage = popupImg.querySelector(".popup__image");
@@ -8,7 +8,6 @@ export const popupImageName = popupImg.querySelector(".popup__image-name");
 export let currentDeleteCard = null;
 
 export function createCard(card, userId) {
-  const cardTemplate = document.querySelector("#cards").content;
   const cardElement = cardTemplate.querySelector(".cards__element");
   const element = cardElement.cloneNode(true);
   const cardImage = element.querySelector(".cards__image");
@@ -38,9 +37,9 @@ export function createCard(card, userId) {
   }
 
   const handleImageClick = (evt) => {
-    popupPicture.src = evt.target.src;
-    popupPicture.alt = evt.target.alt;
-    popupPictureName.textContent = evt.target.alt;
+    popupImage.src = evt.target.src;
+    popupImage.alt = evt.target.alt;
+    popupImageName.textContent = evt.target.alt;
     openPopup(popupImg);
   };
   cardImage.addEventListener("click", handleImageClick);
